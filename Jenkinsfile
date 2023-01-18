@@ -31,11 +31,11 @@ pipeline {
 
     stage("Sonar Code Analysis"){
       environment {
-               scannerHome = tool 'SonarQubeScanner'
+               scannerHome = tool 'sonar-scanner'
             }
       steps{
         echo "<-------------------------Analysis started------------------------->"
-        withSonarQubeEnv('SonarServer') {
+        withSonarQubeEnv('sonar-server') {
                     sh "${scannerHome}/bin/sonar-scanner"
                 }
         echo "<-------------------------Analysis stopped------------------------->"
