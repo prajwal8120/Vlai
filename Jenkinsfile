@@ -6,9 +6,17 @@ pipeline {
   stages{
     stage("Source code check out"){
     steps{
-    echo "<---------------git fetch started--------------->"
+    echo "<--------------------git fetch started-------------------->"
     git 'https://github.com/prajwal8120/Vlai.git'
-    echo "<---------------git fetch stopped--------------->"
+    echo "<--------------------git fetch stopped-------------------->"
+      }
+    }
+
+    stage("Build Package"){
+      steps{
+        echo "<--------------------Building package started-------------------->"
+        sh 'mvn clean compile'
+        echo "<--------------------Building package started-------------------->"
       }
     }
   }
