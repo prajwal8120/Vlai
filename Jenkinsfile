@@ -1,5 +1,5 @@
 pipeline {
-  agent {label 'slave1'}
+  agent {label 'slave12'}
   stages{
     stage("Source code check out"){
     steps{
