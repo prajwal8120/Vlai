@@ -1,5 +1,8 @@
 pipeline {
-  agent {label 'slave12'}
+  agent {label 'slave1'}
+  tools {
+    maven 'M2_HOME'
+  }
   stages{
     stage("Source code check out"){
     steps{
