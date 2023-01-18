@@ -5,7 +5,7 @@ pipeline {
     steps{
     echo "<---------------git fetch started--------------->"
     git 'https://github.com/prajwal8120/Vlai.git'
-    echo "<---------------git fetch started--------------->"
+    echo "<---------------git fetch stopped--------------->"
       }
     }
   }
