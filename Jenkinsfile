@@ -15,18 +15,18 @@ pipeline {
       }
     }
 
-    stage("Compile source code"){
-      steps{
-        echo "<------------------------Compile started------------------------->"
-        sh 'mvn clean compile'
-        echo "<------------------------Compile stopped------------------------->"
-      }
-    }
+    //stage("Compile source code"){
+      //steps{
+        //echo "<------------------------Compile started------------------------->"
+        //sh 'mvn clean compile'
+        //echo "<------------------------Compile stopped------------------------->"
+      //}
+    //}
 
     stage("Build Package"){
       steps{
         echo "<-------------------------Building package started------------------------->"
-        sh 'mvn clean deploy'
+        sh 'mvn clean install'
         echo "<-------------------------Building package stopped------------------------->"
       }
     }
