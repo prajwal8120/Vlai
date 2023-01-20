@@ -116,11 +116,12 @@
 	</build>
 
 	<distributionManagement>
-		<repository>
-			<id>dev</id>
-			<url>file://jarstaging</url>
-		</repository>
-	</distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>a0zoqgs6a6sdu-artifactory-primary-0-releases</name>
+        <url>https://bossu.jfrog.io/artifactory/boss-libs-release-local</url>
+    </repository>
+</distributionManagement>
 	
 
 </project>
