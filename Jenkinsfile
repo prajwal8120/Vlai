@@ -29,18 +29,18 @@ pipeline {
       }
     }
 
-    stage("Sonar Code Analysis"){
-      environment {
-               scannerHome = tool 'sonarscanner'
-            }
-      steps{
-        echo "<-------------------------Analysis started------------------------->"
-        withSonarQubeEnv('sonarserver') {
-                    sh "${scannerHome}/bin/sonar-scanner"
-                }
-        echo "<-------------------------Analysis stopped------------------------->"
-      }
-    }
+    //stage("Sonar Code Analysis"){
+      //environment {
+        //       scannerHome = tool 'sonarscanner'
+        //    }
+     // steps{
+     //   echo "<-------------------------Analysis started------------------------->"
+     //   withSonarQubeEnv('sonarserver') {
+     //               sh "${scannerHome}/bin/sonar-scanner"
+//}
+      //  echo "<-------------------------Analysis stopped------------------------->"
+     // }
+  //  }
 
     //stage ("Quality Gate") {
 
