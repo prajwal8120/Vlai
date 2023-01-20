@@ -26,7 +26,7 @@ pipeline {
     stage("Build Package"){
       steps{
         echo "<-------------------------Building package started------------------------->"
-        sh 'mvn clean package'
+        sh 'mvn clean deploy'
         echo "<-------------------------Building package stopped------------------------->"
       }
     }
