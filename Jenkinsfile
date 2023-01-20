@@ -69,7 +69,7 @@ pipeline {
                          def uploadSpec = """{
                               "files": [
                                 {
-                                  "pattern": "target/(*)",
+                                  "pattern": "target/(*.war)",
                                   "target": "boss-libs-release/{1}",
                                   "flat": "false",
                                   "props" : "${properties}",
