@@ -1,3 +1,5 @@
+def registry  = 'https://bossu.jfrog.io'
+def version   = '1.0.1'
 pipeline {
   agent {label 'slave1'}
   tools {
