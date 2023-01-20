@@ -70,7 +70,7 @@ pipeline {
                               "files": [
                                 {
                                   "pattern": "target/(*)",
-                                  "target": "maven-challenge/{1}",
+                                  "target": "boss-libs-release/{1}",
                                   "flat": "false",
                                   "props" : "${properties}",
                                   "exclusions": [ "*.sha1", "*.md5"]
